@@ -247,7 +247,7 @@ body {
     transform: translateY(-10px);
 }
 
-.member-avatar {
+/* .member-avatar {
     width: 80px;
     height: 80px;
     background: linear-gradient(45deg, #0066cc, #4ade80);
@@ -646,7 +646,7 @@ body {
     box-shadow: 0 20px 40px rgba(0, 102, 204, 0.2);
 }
 
-.member-avatar {
+/* .member-avatar {
     width: 70px;
     height: 70px;
     background: linear-gradient(45deg, #0066cc, #4ade80);
@@ -658,7 +658,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.team-member:hover .member-avatar {
+.team-member:hover /* .member-avatar {
     transform: scale(1.1);
 }
 
@@ -1767,7 +1767,7 @@ body {
     box-shadow: 0 6px 20px rgba(0, 102, 204, 0.4);
 }
 
-.member-avatar {
+/* .member-avatar {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -2065,4 +2065,31 @@ body {
 .hero-container {
     position: relative;
     z-index: 2;
+}
+
+/* Fixed Member Avatar for Images */
+.member-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #0066cc;
+    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+    transition: all 0.3s ease;
+}
+
+.member-avatar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 102, 204, 0.4);
+}
+
+.member-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
