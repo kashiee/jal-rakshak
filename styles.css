@@ -247,21 +247,7 @@ body {
     transform: translateY(-10px);
 }
 
-/* .member-avatar {
-    width: 80px;
-    height: 80px;
-    background: linear-gradient(45deg, #0066cc, #4ade80);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 1rem;
-}
 
-.member-avatar i {
-    font-size: 2rem;
-    color: white;
-}
 
 .team-member h3 {
     font-size: 1.3rem;
@@ -646,26 +632,8 @@ body {
     box-shadow: 0 20px 40px rgba(0, 102, 204, 0.2);
 }
 
-/* .member-avatar {
-    width: 70px;
-    height: 70px;
-    background: linear-gradient(45deg, #0066cc, #4ade80);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 1rem;
-    transition: all 0.3s ease;
-}
 
-.team-member:hover /* .member-avatar {
-    transform: scale(1.1);
-}
 
-.member-avatar i {
-    font-size: 1.8rem;
-    color: white;
-}
 
 .team-member h3 {
     font-size: 1.2rem;
@@ -1752,45 +1720,10 @@ body {
 }
 
 /* Team Member Photos */
-.member-photo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 3px solid #0066cc;
-    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
-    transition: all 0.3s ease;
-}
 
-.member-photo:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 102, 204, 0.4);
-}
 
-/* .member-avatar {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(45deg, #0066cc, #4ade80);
-    border: 3px solid #0066cc;
-    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
-    transition: all 0.3s ease;
-}
 
-.member-avatar:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 102, 204, 0.4);
-}
 
-.member-avatar i {
-    font-size: 2.5rem;
-    color: white;
-}
 
 /* Contact Page Styles */
 .contact-hero {
@@ -2068,16 +2001,38 @@ body {
 }
 
 /* Fixed Member Avatar for Images */
+
+
+
+/* Team Section - Clean CSS */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.team-member {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 102, 204, 0.15);
+}
+
 .member-avatar {
     width: 120px;
     height: 120px;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 3px solid #0066cc;
+    border: 4px solid #0066cc;
     box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
     transition: all 0.3s ease;
 }
@@ -2091,5 +2046,12 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
+    display: block;
+}
+
+.team-member h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
 }
